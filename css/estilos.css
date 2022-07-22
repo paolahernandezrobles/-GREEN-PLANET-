@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titulo {
+    font-size: 60px;
+    padding: 160px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#titulo:hover {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Raleway', sans-ser;
+
+
+}
+
+div {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+section {
+    padding: 30px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #134E5E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(134, 30%, 57%, 0.637), hsla(193, 66%, 22%, 0.692)), url('../img/GREENPEACE_deforestacion_amazonia-e1491826078474.jpg');
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(134, 30%, 57%, 0.637), hsla(193, 66%, 22%, 0.692)), url('../img/GREENPEACE_deforestacion_amazonia-e1491826078474.jpg');
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+path {
+    fill: #fff;
+}
+
+#lista {
+    text-align: center;
+}
+
+#lista button {
+    color: rgb(14, 13, 13);
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background: #969595b4;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+    cursor: pointer;
+    border-color: #000000;
+    border-bottom-style: solid;
+    text-align: center;
+}
+
+#lista button:hover {
+    background-color: #6d83fe;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    border-color: #ffffff;
+
+}
+
+.fondo {
+    background-color: #8a8686a8;
+    border-radius: 20px;
+}
+nav{
+ background: #ffffff;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 15px 20px;
+ height: 85px;
+
+}
+.enlaces{
+    display: flex;
+    align-items: center;
+}
+a {
+   margin: 0;
+   color: #000000;
+   text-decoration: none;
+   padding: 19px;
+   
+}
+
+a:hover {
+    background-color: hsla(0, 2%, 53%, 0.281);
+    border-radius: 8px;
+}
+
+h2 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div#logo {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+img.logo {
+    width: 250px;
+    padding: 5px;
+}
+
+.p {
+    background: #121e61;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+div#boton-seleccionado {
+    text-align: center;
+}
+
+img.imagen {
+    border-radius: 10px;
+    margin: 50px 0 0 0;
+}
+/*galeria*/
+
+.gallery {
+    padding-bottom: 3em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 160px;
+    grid-template-areas:
+        "img1 img9 img7 img4"
+        "img1 img9 img6 img8"
+        "img1 img2 img3 img8"
+        "img11 img2 img10 img5"
+        "img14 img15 img15 img12"
+        "img16 img15 img15 img12";
+    gap: .8em;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.gallery__picture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__picture::before {
+    border-radius: 8px;
+    content: "GREEN PLANET";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2766759d;
+    transform: translate(100%);
+    transition: trasform .3s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.gallery__picture:hover::before {
+    transform: translate(0);
+}
+
+.gallery_picture--g1 {
+    grid-area: img1;
+}
+
+.gallery_picture--g2 {
+    grid-area: img3;
+}
+
+.gallery_picture--g3 {
+    grid-area: img2;
+}
+
+.gallery_picture--g5 {
+    grid-area: img6;
+}
+
+.gallery_picture--g8 {
+    grid-area: img8;
+}
+
+.gallery_picture--g9 {
+    grid-area: img9;
+}
+
+.gallery_picture--g15 {
+    grid-area: img12;
+
+}
+
+.gallery_picture--g12 {
+    grid-area: img15;
+}
+
+/*modonoche*/
+.switch{
+    background: #5b5c5c8e;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.i{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+.switch::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 1000px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active{
+    background: rgba(32, 92, 86, 0.753);
+ color: #fff;
+}
+.active::after{
+    right: 0;
+    left: unset;
+}
+
+body.dark {
+    background-color: #575555;
+    transition: .3s ease all;
+}
+
+body.dark nav {
+    background: #575555;
+}
+
+body.dark .fondo {
+    background: rgba(32, 92, 86, 0.753);
+}
+
+body.dark button {
+    background: rgba(32, 92, 86, 0.753);
+}
+
+body.dark div#logo {
+    background: #383838;
+    border: none;
+}
+
+body.dark button:hover {
+    background: #9fa0a1;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    border-bottom: none;
+
+
+}
+
+body.dark #lista button {
+    color: #d6d4d4;
+    background: rgba(32, 92, 86, 0.753);
+}
+body.dark #lista button:hover{
+    background: #989699;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+body.dark path {
+    fill: #575555;
+}
+
+body.dark div#boton-seleccionado {
+    color: #d6d4d4;
+}
+
+body.dark #titulo {
+    color: rgb(14, 4, 4);
+}
+body.dark h2{
+    color: #d6d4d4;
+}
+body.dark .gallery__picture::before{
+    background: rgba(32, 92, 86, 0.753);
+    color: rgb(255, 255, 255);
+}
+

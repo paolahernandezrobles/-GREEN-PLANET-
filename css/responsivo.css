@@ -1,0 +1,89 @@
+
+/*
+  max-width   anchura máxima
+  min-width   anchura mínima
+  max-height  altura máxima
+  min-height  altura mínima
+*/
+
+@media screen and (max-width: 871px) {
+   #titulo{
+    text-align: center;
+    font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 754px)  {
+    #titulo{
+      font-size: 40px;
+    }
+    .gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img10"
+    "img1 img4"
+    "img6 img8"
+   "img3 img8"
+   "img11 img2"
+   "img9 img15"
+   "img9 img15"
+   "img12 img13"
+   "img12 img14";
+  }
+  }
+  @media screen and (max-width: 375px) {
+    #titulo{
+      display: none; 
+        
+    }
+    button{
+      font-size: 20px;
+      padding: 3px;
+    }
+    img.imagen{
+     width: 300px;
+     height: 300px;
+     margin: 10px;
+    }
+    img.logo{
+      width: 150px;
+      
+      
+    }
+    .gallery{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "img1 img9"
+      "img7 img4"
+      "img6 img8"
+     "img3 img10"
+     "img11 img2"
+     "img14 img15"
+     "img16 img12";
+    }
+    .i{
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      font-size: 10px;
+      display: block;
+      padding: 0;
+      margin: 0;
+  }
+  .switch::after{
+    
+    width: 20px;
+    height: 20px;
+
+}
+a{
+  font-size: 15px;
+  margin: 0;
+}
+nav{
+  background: #ffffff;
+  
+ 
+ 
+ }
+}
